@@ -1,0 +1,88 @@
+/* pages/home/home.wxss */
+
+page {
+  width: 100%;
+  height: 100%;
+}
+
+/* 输入框的简单样式 */
+input {
+  margin: 10px 0;
+  padding: 40rpx;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  text-align: right;
+  height: 15%;
+  margin-bottom: 20rpx; /* 确保 input 和 button-grid 之间有间距 */
+}
+
+.containerBack {
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 固定宽度 */
+.fixedWidth {
+  flex: 0 0 auto;
+}
+
+/* 自适应宽度 */
+.autoFullWidth {
+  flex: 1 1 auto;
+}
+
+.high {
+  background: white;
+  height: 253rpx;
+  color: #fff;
+}
+
+.low {
+  background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  flex: 1; /* 让它占据剩余空间 */
+  padding: 20rpx;
+  font-size: 38px;
+}
+
+.button-grid {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* 调整为100%以适应容器宽度 */
+}
+
+.button-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10rpx;
+}
+
+.grid-button {
+  width: 100rpx;
+  height: 100rpx;
+  background-color: gray;
+  color: black;
+  border: none;
+  border-radius: 5rpx;
+  font-size: 28rpx;
+  text-align: center;
+  line-height: 100rpx;
+  margin-right: 10rpx !important;  /*强制属性*/
+}
+
+.button-row .grid-button:last-child {
+  margin-right: 0 !important; /* 最后一个按钮不需要右侧间距 */
+}
+
+.button-row:last-child .grid-button:first-child {
+  flex: 3; /* 第一个按钮占用两倍空间 */
+}
+
+.button-row:last-child .grid-button:not(:first-child) {
+  flex: 1; /* 其余按钮占用相同的空间 */
+}

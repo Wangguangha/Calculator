@@ -1,0 +1,43 @@
+<!--pages/home/home.wxml-->
+<view class="containerBack">
+  <view class="fixedWidth">
+    <view class="high">
+    </view>
+  </view>
+  <view class="autoFullWidth">
+    <view class="low">
+      <input type="number" auto-focus focus="{{focus}}" value="{{inputValue}}" title="res_show" bindinput="handleInput"/>
+      <view class="button-grid">
+        <view class="button-row">
+          <button class="grid-button" bindtap="handleACButtonTap" data-index="0">AC</button>
+          <button class="grid-button" bindtap="handleButtonTap" data-index="1" data-value="-">+/-</button>
+          <button class="grid-button" bindtap="handleComputeButtonTap" data-index="2" data-value="5">%</button>
+          <button class="grid-button" bindtap="handleComputeButtonTap" data-index="3" data-value="4">÷</button>
+        </view>
+        <view class="button-row">
+          <button class="grid-button" bindtap="handleButtonTap" data-index="4" data-value="7">7</button>
+          <button class="grid-button" bindtap="handleButtonTap" data-index="5" data-value="8">8</button>
+          <button class="grid-button" bindtap="handleButtonTap" data-index="6" data-value="9">9</button>
+          <button class="grid-button" bindtap="handleComputeButtonTap" data-index="7" data-value="3">×</button>
+        </view>
+        <view class="button-row">
+          <button class="grid-button" bindtap="handleButtonTap" data-index="8" data-value="4">4</button>
+          <button class="grid-button" bindtap="handleButtonTap" data-index="9" data-value="5">5</button>
+          <button class="grid-button" bindtap="handleButtonTap" data-index="10" data-value="6">6</button>
+          <button class="grid-button" bindtap="handleComputeButtonTap" data-index="11" data-value="2">-</button>
+        </view>
+        <view class="button-row">
+          <button class="grid-button" bindtap="handleButtonTap" data-index="12" data-value="1">1</button>
+          <button class="grid-button" bindtap="handleButtonTap" data-index="13" data-value="2">2</button>
+          <button class="grid-button" bindtap="handleButtonTap" data-index="14" data-value="3">3</button>
+          <button class="grid-button" bindtap="handleComputeButtonTap" data-index="15" data-value="1">+</button>
+        </view>
+        <view class="button-row">
+          <button class="grid-button" bindtap="handleButtonTap" data-index="16" data-value="0">0</button>
+          <button class="grid-button" bindtap="handleButtonTap" data-index="17" data-value=".">.</button>
+          <button class="grid-button" bindtap="handleEqualButtonTap" data-index="19">=</button>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
